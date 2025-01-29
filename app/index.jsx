@@ -4,8 +4,8 @@ import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";
 const index = () => {
   return (
-    <View style={styles.container}>
-      <Text>My App</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-2xl color-red-300">My App</Text>
 
       <StatusBar style="auto" />
       <Link href="/profile" style={{ color: "blue" }}>
@@ -16,12 +16,3 @@ const index = () => {
 };
 
 export default index;
-
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
